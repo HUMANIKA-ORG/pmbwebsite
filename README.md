@@ -183,7 +183,7 @@ SQL adalah bahasa khusus yang digunakan untuk berinteraksi dengan database. Sing
         DDL digunakan untuk mengelola struktur objek dalam basis data. DDL mencakup perintah-perintah seperti CREATE, ALTER, dan DROP yang digunakan untuk membuat, mengubah, atau menghapus tabel, kolom, indeks, dan objek lainnya dalam basis data.
     </p>
     ```
-    CREATE DATABASE namadatabasenya;
+    CREATE DATABASE namadatabasenya
 
     CREATE TABLE namatable(
         ID INT(11) AUTO_INCREMENT PRIMARY KEY,
