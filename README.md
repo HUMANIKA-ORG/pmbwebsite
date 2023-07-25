@@ -7,7 +7,7 @@
 
 
 ### Struktur Dasar HTML
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +24,7 @@
 
 
 ### Contoh Semantic HTML
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +72,7 @@
 
 ### Macam Macam CSS
 1. Inline CSS
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +87,7 @@
 
 ```
 2. Internal CSS
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +109,7 @@
 
 3. External CSS
     - HTML
-    ```
+    ```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -125,7 +125,7 @@
 
     ```
     - CSS
-    ```
+    ```css
      h1 {
         background-color: red;
         color: blue;
@@ -136,13 +136,13 @@
 </p>
 
 
-```
+```php
 <?php echo("Hello World") ?>
 ```
 
 
 ### Contoh PHP Dasar
-```
+```php
 <!DOCTYPE html>
 <html>
 <head>
@@ -154,7 +154,7 @@
 </body>
 </html>
 ```
-```
+```php
 <?php 
     $variableBebas = "Budi";
 ?>
@@ -182,67 +182,68 @@ SQL adalah bahasa khusus yang digunakan untuk berinteraksi dengan database. Sing
     <p>
         DDL digunakan untuk mengelola struktur objek dalam basis data. DDL mencakup perintah-perintah seperti CREATE, ALTER, dan DROP yang digunakan untuk membuat, mengubah, atau menghapus tabel, kolom, indeks, dan objek lainnya dalam basis data.
     </p>
-    ```
-    CREATE DATABASE namadatabasenya
+    ```sql
+    CREATE DATABASE namadatabasenya;
 
     CREATE TABLE namatable(
         ID INT(11) AUTO_INCREMENT PRIMARY KEY,
         Nama VARCHAR(24),
         Asal VARCHAR(24)
-    )
+    );
 
-    ALTER TABLE namatable ADD Alamat VARCHAR(124)
+    ALTER TABLE namatable ADD Alamat VARCHAR(124);
 
-    DROP TABLE namatable
+    DROP TABLE namatable;
 
-    DROP DATABASE namadatabase
+    DROP DATABASE namadatabase;
     ```
 2. Data Manipulation Language (DML)
     <p>
         DML digunakan untuk memanipulasi data yang ada dalam tabel. DML mencakup perintah-perintah seperti SELECT, INSERT, UPDATE, dan DELETE.
     </p>
 
-    ```
-    SELECT * FROM namatable
+    ```sql
+    SELECT * FROM namatable;
 
-    SELECT * FROM namatable WHERE Nama = 'Budi'
+    SELECT * FROM namatable WHERE Nama = 'Budi';
 
-    INSERT INTO namatable (Nama, Asal) VALUES ('Ahmad', 'Serang')
+    INSERT INTO namatable (Nama, Asal) VALUES ('Ahmad', 'Serang');
 
-    UPDATE namatable SET Nama = 'Ahmad' WHERE Nama = 'Budi'
+    UPDATE namatable SET Nama = 'Ahmad' WHERE Nama = 'Budi';
 
-    DELETE FROM namatable WHERE Nama = 'Ahmad'
+    DELETE FROM namatable WHERE Nama = 'Ahmad';
     ```
 3. Data Control Language (DCL)
     <p>
         DCL digunakan untuk mengontrol hak akses pengguna dan transaksi dalam basis data. DCL mencakup perintah-perintah seperti GRANT dan REVOKE yang digunakan untuk memberikan atau mencabut hak akses, serta perintah COMMIT dan ROLLBACK untuk mengelola transaksi.
     </p>
 
-    ```
-    GRANT hakakses ON namatable TO pengguna
+    ```sql
+    GRANT hakakses ON namatable TO pengguna;
     ```
 
     <h1>Mengijinkan semua hak ases kepada pengguna</h1>
-    ```
-    GRANT ALL PRIVILEGES ON *.* TO 'namauser'@'hostname'
+
+    ```sql
+    GRANT ALL PRIVILEGES ON *.* TO 'namauser'@'hostname';
     ```
 
     <h1>Melepas hak ases dari pengguna</h1>
-    ```
-    REVOKE hakases ON namatable FROM pengguna
-    ```
 
+    ```sql
+    REVOKE hakases ON namatable FROM pengguna;
+    ```
 
     <h1>Melepas semua hak ases dari pengguna</h1>
-    ```
-    REVOKE ALL PRIVILEGES ON *.* FROM 'namauser'@'hostname'
+    ```sql
+    REVOKE ALL PRIVILEGES ON *.* FROM 'namauser'@'hostname';
     ```    
 
 
 ## Contoh Penerapan HTML, CSS, PHP, SQL
 
 
-```
+```php
 <?php
     require_once('config.php');    
 
