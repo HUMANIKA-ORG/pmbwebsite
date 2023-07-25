@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #0191AE;
+    display: flex;
+    flex-direction: row;
+    padding: 24px; 
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    animation: kelapkelip 2s infinite;
+}
+
+@keyframes kelapkelip {
+    0%, 100% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }    
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar h1 {
+    animation: loncatloncat 1s infinite;
+}
+
+@keyframes loncatloncat {
+    0%, 100% {
+        transform: translateY(-25%);
+    }    
+    50% {
+        transform: translateY(0%);
+    }
+}
+
+.navbar h1:hover {
+    background-color: #026174;
+    padding: 12px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.navbar-list li:hover{
+    background-color: #026174;
+    padding: 12px;
+    border-radius: 90px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #0d9ab6;
+    height: 80vh;
+    padding: 64px 32px;
+}   
+
+.container  form {
+    margin: 0px auto;
+    background-color: white;
+    width: 50%;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container input {
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container select {
+    width: 103%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container a {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.container button {
+    display: block;
+    margin: 4px auto 0px auto;
+    background-color: #0191AE;
+    color: white;
+    width: 25%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+} 
