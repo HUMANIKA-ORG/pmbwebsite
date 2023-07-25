@@ -188,14 +188,14 @@ SQL adalah bahasa khusus yang digunakan untuk berinteraksi dengan database. Sing
     CREATE TABLE namatable(
         ID INT(11) AUTO_INCREMENT PRIMARY KEY,
         Nama VARCHAR(24),
-        Asal VARCHAR(24), 
-    );
+        Asal VARCHAR(24)
+    )
 
-    ALTER TABLE namatable ADD Alamat VARCHAR(124);
+    ALTER TABLE namatable ADD Alamat VARCHAR(124)
 
-    DROP TABLE namatable;
+    DROP TABLE namatable
 
-    DROP DATABASE namadatabase;
+    DROP DATABASE namadatabase
     ```
 2. Data Manipulation Language (DML)
     <p>
@@ -203,15 +203,15 @@ SQL adalah bahasa khusus yang digunakan untuk berinteraksi dengan database. Sing
     </p>
 
     ```
-    SELECT * FROM namatable;
+    SELECT * FROM namatable
 
-    SELECT * FROM namatable WHERE Nama = 'Budi';
+    SELECT * FROM namatable WHERE Nama = 'Budi'
 
-    INSERT INTO namatable (Nama, Asal) VALUES ('Ahmad', 'Serang');
+    INSERT INTO namatable (Nama, Asal) VALUES ('Ahmad', 'Serang')
 
-    UPDATE namatable SET Nama = 'Ahmad' WHERE Nama = 'Budi';
+    UPDATE namatable SET Nama = 'Ahmad' WHERE Nama = 'Budi'
 
-    DELETE FROM namatable WHERE Nama = 'Ahmad'; 
+    DELETE FROM namatable WHERE Nama = 'Ahmad'
     ```
 3. Data Control Language (DCL)
     <p>
@@ -219,23 +219,23 @@ SQL adalah bahasa khusus yang digunakan untuk berinteraksi dengan database. Sing
     </p>
 
     ```
-    GRANT hakakses ON namatable TO pengguna;
+    GRANT hakakses ON namatable TO pengguna
     ```
 
     <h1>Mengijinkan semua hak ases kepada pengguna</h1>
     ```
-    GRANT ALL PRIVILEGES ON *.* TO 'namauser'@'hostname';
+    GRANT ALL PRIVILEGES ON *.* TO 'namauser'@'hostname'
     ```
 
     <h1>Melepas hak ases dari pengguna</h1>
     ```
-    REVOKE hakases ON namatable FROM pengguna;
+    REVOKE hakases ON namatable FROM pengguna
     ```
 
 
     <h1>Melepas semua hak ases dari pengguna</h1>
     ```
-    REVOKE ALL PRIVILEGES ON *.* FROM 'namauser'@'hostname';
+    REVOKE ALL PRIVILEGES ON *.* FROM 'namauser'@'hostname'
     ```    
 
 
